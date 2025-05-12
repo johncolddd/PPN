@@ -20,7 +20,7 @@ Ptychographic imaging suffers from a geometric mismatch between conventional dee
 **Data and Code References:**
 - The amplitude and phase data used in this experiment are sourced from: [AD_LTEM](https://github.com/danielzt12/AD_LTEM).
 - The code in this repository is inspired by and references the following works:
-  - [PtychoNN](https://github.com/mcherukara/PtychoNN), associated with the paper: M. Cherukara et al., *AIP Advances*, 2021, [DOI: 10.1063/5.0013065](https://aip.scitation.org/doi/full/10.1063/5.0013065).
+  - [PtychoNN](https://github.com/mcherukara/PtychoNN), associated with the paper: M. Cherukara et al., *APL*, 2021, [DOI: 10.1063/5.0013065](https://aip.scitation.org/doi/full/10.1063/5.0013065).
   - [Deep Phase Imaging](https://github.com/dillanchang/deep-phase-imaging), associated with the paper: D. Chang et al., *Physical Review Letters*, 2023, [DOI: 10.1103/PhysRevLett.130.016101](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.016101).
  
   
