@@ -1,4 +1,4 @@
-# PPN: Polar Coordinate Attention Network for Ptychographic Imaging
+# A Polar Coordinate Attention Transformer for Ptychographic Imaging
 
 Official implementation of **PPN (Physics-Inspired Ptychographic Network)**, accepted in our IEEE TCI paper:
 
