@@ -19,10 +19,12 @@ Ptychographic imaging suffers from a geometric mismatch between conventional dee
 
 ## 🛠 Code Structure
 
-- `models/` – PPN architecture and modules (ViT branch, PoCA branch, decoder)
-- `scripts/` – Training, evaluation, and stitching routines
-- `datasets/` – Data loading pipelines for simulated and experimental datasets
-- `utils/` – Loss functions, metrics, and preprocessing
+- `models/` – PPN model components (ViT branch, Polar Attention branch, decoder)
+- `train/` – Training and evaluation scripts
+- `utils/` – Data loading, preprocessing, visualization, and custom callbacks
+- `config.py` – Centralized configuration for paths and hyperparameters
+- `main.py` – Main script to run the training and visualization pipeline
+
 
 ## 📖 Citation
 
