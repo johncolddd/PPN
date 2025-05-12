@@ -1,9 +1,9 @@
 class Config:
     # File paths
-    BASE_PATH = '/content/drive/My Drive/PtychoNN-master/TF2/apl_test/image/'
-    AMPLITUDE_PATH = BASE_PATH + 'true_amplitude.tiff'
-    PHASE_PATH = BASE_PATH + 'true_phase.tiff'
-    PROBE_PATH = BASE_PATH + 'pxy_probe1000.npy'
+    BASE_PATH = '/content/drive/My Drive/PPN/'
+    AMPLITUDE_PATH = BASE_PATH + 'amplitude.tiff'
+    PHASE_PATH = BASE_PATH + 'phase.tiff'
+    PROBE_PATH = BASE_PATH + 'probe.npy'
 
     # Data parameters
     IMAGE_SIZE = (512, 512)
