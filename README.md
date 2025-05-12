@@ -5,7 +5,7 @@ Official implementation of **PPN (Physics-Inspired Ptychographic Network)**, acc
 > *A Physics-Inspired Deep Learning Framework with Polar Coordinate Attention for Ptychographic Imaging*  
 > Han Yue, Jun Cheng, Yu-Xuan Ren, Chien-Chun Chen, Grant A. van Riessen, Philip H.W. Leong, Steve Feng Shu  
 > IEEE Transactions on Computational Imaging, 2025  
-> [Paper Link (when available)]()
+> [Paper Link (when available)](https://arxiv.org/abs/2412.06806)
 
 ## 🔬 Overview
 
