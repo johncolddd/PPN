@@ -9,7 +9,7 @@ Official implementation of **PPN (Physics-Inspired Ptychographic Network)**, acc
 
 ## 🔬 Overview
 
-Ptychographic imaging suffers from a geometric mismatch between conventional deep neural networks and the underlying diffraction physics. PPN addresses this gap through a dual-branch architecture that incorporates a **Polar Coordinate Attention (PoCA)** mechanism for modeling global coherence in reciprocal space, and a local ViT branch for capturing spatial features.
+Deep Learning based ptychographic imaging suffers from a geometric mismatch between conventional deep neural networks and the underlying diffraction physics. PPN addresses this gap through a dual-branch architecture that incorporates a **Polar Coordinate Attention (PoCA)** mechanism for modeling global coherence in reciprocal space, and a local ViT branch for capturing spatial features.
 
 **Key Features:**
 - Physics-inspired attention mechanism aligned with diffraction geometry
