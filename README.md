@@ -22,7 +22,7 @@ Deep Learning based ptychographic imaging suffers from a geometric mismatch betw
 - The code in this repository is inspired by and references the following works:
   - [PtychoNN](https://github.com/mcherukara/PtychoNN), associated with the paper: M. Cherukara et al., *APL*, 2021, [DOI: 10.1063/5.0013065](https://aip.scitation.org/doi/full/10.1063/5.0013065).
   - [Deep Phase Imaging](https://github.com/dillanchang/deep-phase-imaging), associated with the paper: D. Chang et al., *Physical Review Letters*, 2023, [DOI: 10.1103/PhysRevLett.130.016101](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.016101).
-  - * [PtyNet](https://github.com/paidaxinbao/PtyNet), associated with the paper *Efficient ptychography reconstruction strategy by fine tuning of large pre-trained deep learning model*. In this work, we used the probe provided in their repository: [pxy\_probe1000.npy](https://github.com/paidaxinbao/PtyNet/blob/main/pxy_probe1000.npy).
+  - [PtyNet](https://github.com/paidaxinbao/PtyNet), associated with the paper *Efficient ptychography reconstruction strategy by fine tuning of large pre-trained deep learning model*. In this work, we used the probe provided in their repository: [pxy\_probe1000.npy](https://github.com/paidaxinbao/PtyNet/blob/main/pxy_probe1000.npy).
 
   
 ## 🛠 Code Structure
