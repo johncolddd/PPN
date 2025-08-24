@@ -134,15 +134,21 @@ def load_and_prepare_data(amplitude_path, phase_path, probe_path, new_size=(512,
     ph = resize_images(ph, new_size=(32, 32), apply_resize=True)
     diff = resize_center_region(diff, new_size=(32, 32), apply_resize=True)
 
-    # Split data
-    nlines = int(diff.shape[0] * ratio)
-    tst_strt = diff.shape[0] - int(diff.shape[0] * ratio)
+        # Split data
+    nlines = int(diff.shape[0] * ratio)       # 训练用的行数
+    tst_strt = diff.shape[0] - (diff.shape[0] - nlines)  # 测试集起始行（其实就是 nlines）
+
+    # 训练集 = 前 80% 行，所有列
     X_train = diff[:nlines, :].reshape(-1, 32, 32)[:, :, :, np.newaxis]
-    X_test = diff[tst_strt:, tst_strt:].reshape(-1, 32, 32)[:, :, :, np.newaxis]
     Y_I_train = amp[:nlines, :].reshape(-1, 32, 32)[:, :, :, np.newaxis]
-    Y_I_test = amp[tst_strt:, tst_strt:].reshape(-1, 32, 32)[:, :, :, np.newaxis]
     Y_phi_train = ph[:nlines, :].reshape(-1, 32, 32)[:, :, :, np.newaxis]
-    Y_phi_test = ph[tst_strt:, tst_strt:].reshape(-1, 32, 32)[:, :, :, np.newaxis]
+
+    # 测试集 = 后 20% 行 × 前 20% 列（保证是正方形）
+    nltest = diff.shape[0] - nlines   # 测试区域的边长
+    X_test = diff[nlines:, :nltest].reshape(-1, 32, 32)[:, :, :, np.newaxis]
+    Y_I_test = amp[nlines:, :nltest].reshape(-1, 32, 32)[:, :, :, np.newaxis]
+    Y_phi_test = ph[nlines:, :nltest].reshape(-1, 32, 32)[:, :, :, np.newaxis]
+
 
     # Shuffle training data
     X_train, Y_I_train, Y_phi_train = shuffle(X_train, Y_I_train, Y_phi_train, random_state=0)
